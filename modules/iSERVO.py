@@ -16,7 +16,7 @@ t_max = [ 2.5 ] * 16
 _oscillator_freq = 27000000
 freq = 50
 prescaleval = ((_oscillator_freq / (freq * 4096.0)) + 0.5) - 1.0
-i2c1.writeto_mem(ADDR, 0xFE, bytes([ prescaleval ]))
+i2c1.writeto_mem(ADDR, 0xFE, bytes([ int(prescaleval) ]))
 
 # Reset
 i2c1.writeto_mem(ADDR, 0x00, bytes([ 0b10100000 ])) # RESTART triger, Auto-Increment register
