@@ -23,12 +23,12 @@
                 <block type="iservo_calibrate">
                     <value name="min">
                         <shadow type="math_number">
-                            <field name="NUM">5</field>
+                            <field name="NUM">0.5</field>
                         </shadow>
                     </value>
                     <value name="max">
                         <shadow type="math_number">
-                            <field name="NUM">5</field>
+                            <field name="NUM">2.5</field>
                         </shadow>
                     </value>
                 </block>
