@@ -40,7 +40,7 @@ Blockly.defineBlocksWithJsonArray([
   },
   {
     "type": "iservo_calibrate",
-    "message0": "RFID read UID",
+    "message0": "iSERVO pin %1 calibrate time to %2 , %3",
     "args0": [
       {
         "type": "field_dropdown",

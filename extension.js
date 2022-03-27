@@ -7,7 +7,27 @@
     icon: "/static/icon.png", // Category icon
     color: "#3498DB", // Category color (recommend some blocks color)
     blocks: [ // Blocks in Category
-        "rfid_is_detected",
-        "rfid_read_uid"
+        {
+            xml: `
+                <block type="iservo">
+                    <value name="value">
+                        <shadow type="math_number">
+                            <field name="NUM">5</field>
+                        </shadow>
+                    </value>
+                </block>
+            `
+        },
+        {
+            xml: `
+                <block type="iservo_calibrate">
+                    <value name="value">
+                        <shadow type="math_number">
+                            <field name="NUM">5</field>
+                        </shadow>
+                    </value>
+                </block>
+            `
+        },
     ]
 });
