@@ -10,7 +10,7 @@
         {
             xml: `
                 <block type="iservo">
-                    <value name="value">
+                    <value name="angle">
                         <shadow type="math_number">
                             <field name="NUM">5</field>
                         </shadow>
@@ -21,7 +21,12 @@
         {
             xml: `
                 <block type="iservo_calibrate">
-                    <value name="value">
+                    <value name="min">
+                        <shadow type="math_number">
+                            <field name="NUM">5</field>
+                        </shadow>
+                    </value>
+                    <value name="max">
                         <shadow type="math_number">
                             <field name="NUM">5</field>
                         </shadow>
