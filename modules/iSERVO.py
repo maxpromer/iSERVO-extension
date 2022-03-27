@@ -28,7 +28,7 @@ def setAngle(n, angle):
 	angle = min(angle, 200)
 
 	angleToMS = (angle * (t_max[n] -  t_min[n]) / 200.0) + t_min[n]
-	pulse_u16 = (angleToMS * 4095.0 / 20.0) * 0.93
+	pulse_u16 = int((angleToMS * 4095.0 / 20.0) * 0.93)
 
 	i2c1.writeto_mem(ADDR, 0x06 + (n * 4), bytes([
 		0, # ON LSB
